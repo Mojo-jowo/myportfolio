@@ -1,6 +1,8 @@
 import React from 'react';
-import './Navbar.css';
 import { NavLink } from 'react-router-dom';
+
+import './Navbar.css';
+
 
 function Navbar() {
     return (
@@ -36,7 +38,7 @@ function Navbar() {
             </ul>
 
             <div className="socials">
-
+                <h1>Kwani whatsapp</h1>
             </div>
 
         </nav>

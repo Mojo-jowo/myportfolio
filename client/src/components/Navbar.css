@@ -1,0 +1,39 @@
+.navbar-container {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+    height: 10vh;
+}
+
+.nav-menu {
+    background-color: aquamarine ;
+    display: grid;
+    position: absolute;
+    top: 10vh;
+    width: 100vw;
+    justify-content: center;
+    display: none;
+}
+
+
+/* Laptop design */
+
+@media only screen and (min-width: 1200px) {
+    .navbar-container {
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-columns: unset;
+        height: 100vh;
+        width: 14vw;
+        position: fixed;
+    }
+
+    .nav-menu {
+        background-color: aquamarine ;
+        display: initial;
+        position: unset;
+        align-self: center;
+        width: 0;
+    }
+}

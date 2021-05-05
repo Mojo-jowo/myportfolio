@@ -1,0 +1,121 @@
+.home {
+    display: grid;
+    grid-template-areas: 
+            "header header header"
+            "projects projects tools"
+            "about about tools"
+            "skills skills contact";
+    grid-template-rows: 1fr 4fr 4fr 4fr;
+    grid-template-columns: 2fr 2fr 1fr;
+    height: 90vh;
+    width: 100vw;
+}
+
+.homeheader {
+    grid-area: header;
+}
+
+.projects {
+    grid-area: projects;
+    background-color: rgb(88, 88, 77);
+    border-radius: 1rem;
+}
+
+.about {
+    grid-area: about;
+    background-color: bisque;
+    border-radius: 1rem;
+}
+
+.skills {
+    grid-area: skills;
+    background-color: brown;
+    border-radius: 1rem;
+}
+
+.tools {
+    grid-area: tools;
+    background-color: coral;
+    border-radius: 1rem;
+}
+
+.contact {
+    grid-area: contact;
+    background-color: darkgray;
+    border-radius: 1rem;
+}
+
+.projects, .skills, .tools, .contact, .about {
+    margin: 0.7rem;
+}
+
+.homeheader{
+    margin-inline-start: 1rem;
+}
+
+.headeer {
+    margin-inline-start: 1rem;
+}
+
+
+/* Laptop design */
+
+@media only screen and (min-width: 1200px) {
+    .home {
+        display: grid;
+        grid-template-areas: 
+                "header header header"
+                "about projects skills"
+                "about projects skills"
+                "tools tools contact";
+        grid-template-rows: 0.5fr 3.5fr 3.5fr 1.5fr;
+        grid-template-columns: 2fr 2fr 1.5fr;
+        height: 100vh;
+        width: 86vw;
+        position: absolute;
+        top: 0;
+        left: 14vw;
+    }
+
+    .homeheader {
+        grid-area: header;
+    }
+    
+    .projects {
+        grid-area: projects;
+        background-color: rgb(88, 88, 77);
+        border-radius: 1rem;
+    }
+    
+    .about {
+        grid-area: about;
+        background-color: bisque;
+        border-radius: 1rem;
+    }
+    
+    .skills {
+        grid-area: skills;
+        background-color: brown;
+        border-radius: 1rem;
+    }
+    
+    .tools {
+        grid-area: tools;
+        background-color: coral;
+        border-radius: 1rem;
+    }
+    
+    .contact {
+        grid-area: contact;
+        background-color: darkgray;
+        border-radius: 1rem;
+    }
+    
+    .projects, .skills, .tools, .contact, .about {
+        margin: 0.7rem;
+    }
+    
+    .headeer {
+        margin-inline-start: 1rem;
+    }
+}
