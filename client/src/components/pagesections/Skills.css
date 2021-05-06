@@ -1,0 +1,110 @@
+.skills-container {
+    display: grid;
+    grid-template-areas: 
+            "skillheader skillheader"
+            "skill skill"
+            "language language"
+            ;
+    grid-template-rows: 1fr 2fr 2fr;
+    height: 90vh;
+    width: auto; 
+    padding: 0 1.9rem;
+}
+
+.skills-header{
+    grid-area: skillheader;
+    background-color: wheat;
+}
+
+.skill {
+    grid-area: skill;
+    background-color: violet;
+}
+
+.languages {
+    grid-area: language;
+    background-color: thistle;
+}
+
+.devprocess-container {
+    display: grid;
+    grid-template-areas: 
+            "devprocessheader devprocessheader"
+            "process process"
+            "process process"
+            ;
+    grid-template-rows: 1fr 2fr 2fr;
+    height: 90vh;
+    width: auto; 
+    padding: 0 1.9rem;
+}
+
+.devprocess-header {
+    grid-area: devprocessheader;
+    background-color:yellowgreen;
+}
+
+.process {
+    grid-area: process;
+    background-color: teal;
+}
+
+@media only screen and (min-width: 1200px) {
+    .skills-container {
+        display: grid;
+        grid-template-areas: 
+                "skillheader skillheader"
+                "skill language"
+                "skill language";
+        grid-template-rows: 0.6fr 1.2fr 1.2fr;
+        grid-template-columns: 1fr 1fr;
+        height: 80vh;
+        width: 86vw;
+        padding: unset;
+        position: absolute;
+        top: 0;
+        left: 14vw;
+    }
+
+    .skills-header{
+        grid-area: skillheader;
+        background-color: wheat;
+    }
+    
+    .skill {
+        grid-area: skill;
+        background-color: violet;
+    }
+    
+    .languages {
+        grid-area: language;
+        background-color: thistle;
+    }   
+    
+    .devprocess-container {
+        display: grid;
+        grid-template-areas: 
+            "devprocessheader devprocessheader"
+            "process process"
+            "process process"
+            ;
+        grid-template-rows: 1fr 2fr 2fr;
+        grid-template-columns: 1fr 1fr;
+        height: 70vh;
+        width: 86vw;
+        padding: unset;
+        position: absolute;
+        top: 80vh;
+        left: 14vw;
+    }
+
+    .devprocess-header {
+        grid-area: devprocessheader;
+        background-color:yellowgreen;
+    }
+    
+    .process {
+        grid-area: process;
+        background-color: teal;
+    }
+}

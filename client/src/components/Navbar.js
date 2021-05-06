@@ -9,36 +9,36 @@ function Navbar() {
         <>
         <nav className="navbar-container">
             <div className="menu-icon">
-                <NavLink to="" className="navbar-logo">
+                <NavLink to="/" className="navbar-logo">
                     Mojo
                 </NavLink>
             </div>
 
             <ul className="nav-menu">
                 <li className="nav-items">
-                    <NavLink to="" className="nav-links">
+                    <NavLink to="/" className="nav-links">
                         Home
                     </NavLink>
                 </li>
                 <li className="nav-items">
-                    <NavLink to="" className="nav-links">
+                    <NavLink to="/about" className="nav-links">
                         About
                     </NavLink>
                 </li>
                 <li className="nav-items">
-                    <NavLink to="" className="nav-links">
+                    <NavLink to="/skills" className="nav-links">
                         Skills
                     </NavLink>
                 </li>
                 <li className="nav-items">
-                    <NavLink to="" className="nav-links">
+                    <NavLink to="/projects" className="nav-links">
                         Projects
                     </NavLink>
                 </li>
             </ul>
 
             <div className="socials">
-                <h1>Kwani whatsapp</h1>
+                <h1>Kwani whats up ?</h1>
             </div>
 
         </nav>
