@@ -128,7 +128,7 @@
 
 
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
     .aboutme {
         display: grid;
         grid-template-areas: 
@@ -139,11 +139,11 @@
         grid-template-rows: 0.8fr 0.8fr 1.4fr 1fr;
         grid-template-columns: 1fr 1fr;
         height: auto;
-        width: 86vw;
+        width: 86%;
         padding: unset;
         position: absolute;
         top: 0;
-        left: 14vw;
+        left: 14%;
     }
     
     .profile-pic {

@@ -37,6 +37,14 @@ function Skills() {
 
             <section className="languages">
                 <h1 className="languageheader">Languages</h1>
+                <i class="fab fa-react" id="langicon">React</i>
+                <i class="fab fa-html5" id="langicon">Html</i>
+                <i class="fab fa-css3" id="langicon">CSS</i>
+                <i class="fab fa-js" id="langicon">Javascript</i>
+                <i class="fab fa-node" id="langicon">Node.js</i>
+                <i class="fab fa-npm" id="langicon">Node package manager</i>
+                <p className="express" id="langicon">Express.js</p>
+                <p className="sql" id="langicon">sql</p>
             </section>
         </div>
 
@@ -46,10 +54,36 @@ function Skills() {
             </section>
 
             <section className="process">
-                <figure className="process1"></figure>
-                <figure className="process1"></figure>
-                <figure className="process1"></figure>
-                <figure className="process1"></figure>
+            <figure className="process1">
+                    <figcaption className="processname">
+                        Drawing of designs on paper 
+                    </figcaption>
+                </figure>
+                <figure className="process2">
+                    <figcaption className="processname">
+                        Creating of mockups in Adobe Xd
+                    </figcaption>
+                </figure>
+                <figure className="process3">
+                    <figcaption className="processname">
+                        Writing of design notes in Evernote 
+                    </figcaption>
+                </figure>
+                <figure className="process4">
+                    <figcaption className="processname">
+                        Layout the page using code 
+                    </figcaption>
+                </figure>
+                <figure className="process5">
+                    <figcaption className="processname">
+                        Add content to the page and design its elements
+                    </figcaption>
+                </figure>
+                <figure className="process6">
+                    <figcaption className="processname">
+                        Writing documentation and deploy the project 
+                    </figcaption>
+                </figure>
             </section>
         </div>
             

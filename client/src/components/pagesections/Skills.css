@@ -49,7 +49,7 @@
     background-color: teal;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1100px) {
     .skills-container {
         display: grid;
         grid-template-areas: 
@@ -59,11 +59,11 @@
         grid-template-rows: 0.6fr 1.2fr 1.2fr;
         grid-template-columns: 1fr 1fr;
         height: 80vh;
-        width: 86vw;
+        width: 86%;
         padding: unset;
         position: absolute;
         top: 0;
-        left: 14vw;
+        left: 14%;
     }
 
     .skills-header{
@@ -91,11 +91,11 @@
         grid-template-rows: 1fr 2fr 2fr;
         grid-template-columns: 1fr 1fr;
         height: 70vh;
-        width: 86vw;
+        width: 86%;
         padding: unset;
         position: absolute;
         top: 80vh;
-        left: 14vw;
+        left: 14%;
     }
 
     .devprocess-header {
