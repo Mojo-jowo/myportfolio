@@ -5,8 +5,8 @@
             "statement"
             "activities"
             "tools";
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 90vh;
+    grid-template-rows: 0.7fr 0.7fr 1.3fr 1.3fr;
+    height: auto;
     width: auto; 
     padding: 0 2rem;
 }
@@ -23,8 +23,109 @@
 
 .activities {
     grid-area: activities;
-    background-color: crimson;
+    display: grid;
+    grid-template-areas:
+            "activitiesheader"
+            "activity1"
+            "activity2"
+            "activity3";
+
 }
+.activities-header {
+    grid-area: activitiesheader;
+}
+
+.activity1 {
+    grid-area: activity1;
+    justify-self: center;
+    display: grid;
+}
+
+.activity2 {
+    grid-area: activity2;
+    justify-self: center;
+    display: grid;
+
+
+}
+
+.activity3 {
+    grid-area: activity3;
+    justify-self: center;
+    display: grid;
+
+
+}
+
+.activityicon {
+    height: 9rem;
+    width: 9rem;
+    justify-self: center;
+}
+
+.activityname {
+    justify-self: center;
+    margin: 1rem;
+}
+
+.tool-container {
+    grid-area: tools;
+    background-color: teal;
+    border-radius: 2rem;
+    display: grid;
+    grid-template-areas: 
+            "toheader toheader"
+            "tool1 tool2"
+            "tool3 tool4"
+            "tool5 tool6"
+            "tool7 tool8" ;
+    justify-content: center;
+}
+
+.tool1 {
+    grid-area: tool1;
+    display: grid;
+    justify-content: center;
+}
+.tool2 {
+    grid-area: tool2;
+    display: grid;
+    justify-content: center;
+}
+.tool3 {
+    grid-area: tool3;
+    display: grid;
+    justify-content: center;
+}
+.tool4 {
+    grid-area: tool4;
+    display: grid;
+    justify-content: center;
+}
+.tool5 {
+    grid-area: tool5;
+    display: grid;
+    justify-content: center;
+}
+.tool6 {
+    grid-area: tool6;
+    display: grid;
+    justify-content: center;
+}
+.tool7 {
+    grid-area: tool7;
+    display: grid;
+    justify-content: center;
+}
+.tool8 {
+    grid-area: tool8;
+    display: grid;
+    justify-content: center;
+}
+
+
+
+
 
 
 @media only screen and (min-width: 1200px) {
@@ -35,9 +136,9 @@
                 "picture statement"
                 "activities activities"
                 "tools tools";
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.8fr 0.8fr 1.4fr 1fr;
         grid-template-columns: 1fr 1fr;
-        height: 100vh;
+        height: auto;
         width: 86vw;
         padding: unset;
         position: absolute;
@@ -57,6 +158,63 @@
     
     .activities {
         grid-area: activities;
-        background-color: crimson;
+    }
+
+    .activities {
+        grid-area: activities;
+        display: grid;
+        grid-template-areas:
+                "activitiesheader activitiesheader activitiesheader"
+                "activity1 activity2 activity3";
+        grid-gap: 2rem 0;
+        
+    }
+    .activities-header {
+        grid-area: activitiesheader;
+    }
+    
+    .activity1 {
+        grid-area: activity1;
+        justify-self: center;
+        display: grid;
+    }
+    
+    .activity2 {
+        grid-area: activity2;
+        justify-self: center;
+        display: grid;
+    
+    
+    }
+    
+    .activity3 {
+        grid-area: activity3;
+        justify-self: center;
+        display: grid;
+    
+    
+    }
+    
+    .activityicon {
+        height: 11rem;
+        width: 11rem;
+        justify-self: center;
+    }
+    
+    .activityname {
+        justify-self: center;
+        margin: 1rem;
+    }
+
+    .tool-container {
+        grid-area: tools;
+        background-color: teal;
+        display: grid;
+        grid-template-areas: 
+                "toheader toheader toheader toheader toheader toheader toheader toheader"
+                "tool1 tool2 tool3 tool4 tool5 tool6 tool7 tool8" ;
+        border-radius: 4.5rem;
+        grid-template-columns: repeat(8, 0.1fr);
+        grid-template-rows: 1fr 2fr;
     }
 }

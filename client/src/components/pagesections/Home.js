@@ -20,7 +20,7 @@ function Home() {
                 <h1 className="headeer">s</h1>
             </Link>
 
-            <Link to="/tools" className="tools">
+            <Link to="/skills" className="tools">
                 <h1 className="headeer">t</h1>
             </Link>
 
