@@ -9,19 +9,32 @@
     height: auto;
     width: auto; 
     padding: 0 2rem;
+    position: absolute;
+    top: 10vh;
+    background-color: rgba(0, 0, 0, 0.822);
 }
 
 .profile-pic {
     grid-area: picture;
-    background-color: rgb(118, 145, 136);
+    display: grid;
+}
+
+.me {
+    justify-self: center;
+    align-self: center;
+    height: 10rem;
+    width: 10rem;
+    border: 5px solid rgb(172, 158, 158);
+    transform: rotate(10deg);
 }
 
 .profile-statement {
     grid-area: statement;
-    background-color: brown;
+
 }
 
 .activities {
+    background-color: white;
     grid-area: activities;
     display: grid;
     grid-template-areas:
@@ -136,7 +149,7 @@
                 "picture statement"
                 "activities activities"
                 "tools tools";
-        grid-template-rows: 0.8fr 0.8fr 1.4fr 1fr;
+        grid-template-rows: 1.35fr 1.35fr 1.3fr 1fr;
         grid-template-columns: 1fr 1fr;
         height: auto;
         width: 86%;
@@ -144,16 +157,59 @@
         position: absolute;
         top: 0;
         left: 14%;
+        /* grid-gap: 1rem; */
     }
     
     .profile-pic {
         grid-area: picture;
-        background-color: rgb(118, 145, 136);
+        display: grid;
+    }
+
+    .statement-content {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.1rem;
+        word-spacing: 0.1rem;
+        color: whitesmoke;
+        margin-inline-end: 2rem;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+    }
+
+    .statement-header {
+        font-family: 'Itim', cursive;
+        font-size: 2.2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-inline-start: 1rem;
+        color: #08fdd8;
+    }
+
+    .intro {
+        margin-inline-start: 1.2rem;
+        font-size: 2.3rem;
+    }
+
+    .br {
+        margin-top: 1rem;
+        letter-spacing: 0.01rem;
+        line-height: 1.2rem;
+    }
+    .codename {
+        float: right;
+    }
+    .me {
+        justify-self: center;
+        align-self: center;
+        height: 10rem;
+        width: 10rem;
+        transform: rotate(10deg);
+        border: 5px solid #08fdd8;
     }
     
     .profile-statement {
         grid-area: statement;
-        background-color: brown;
     }
     
     .activities {
@@ -171,6 +227,10 @@
     }
     .activities-header {
         grid-area: activitiesheader;
+        font-family: 'Itim', cursive;
+        font-size: 2.2rem;
+        margin-inline-start: 2rem;
+        color: #08fdd8;
     }
     
     .activity1 {
@@ -194,6 +254,7 @@
     
     
     }
+
     
     .activityicon {
         height: 11rem;
@@ -204,6 +265,8 @@
     .activityname {
         justify-self: center;
         margin: 1rem;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.2rem;
     }
 
     .tool-container {
@@ -213,8 +276,22 @@
         grid-template-areas: 
                 "toheader toheader toheader toheader toheader toheader toheader toheader"
                 "tool1 tool2 tool3 tool4 tool5 tool6 tool7 tool8" ;
-        border-radius: 4.5rem;
+        border-radius: 31px;
+        background: #b0b0b0;
+        box-shadow:  22px 22px 44px #464646,
+                        -22px -22px 44px #ffffff;
         grid-template-columns: repeat(8, 0.1fr);
         grid-template-rows: 1fr 2fr;
+    }
+
+    .toheader {
+        font-family: 'Itim', cursive;
+        font-size: 2.2rem;
+        color: #08fdd8;
+    }
+
+    .toolname {
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 1.1rem;
     }
 }

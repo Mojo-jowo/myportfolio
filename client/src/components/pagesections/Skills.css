@@ -4,50 +4,184 @@
             "skillheader skillheader"
             "skill skill"
             "language language"
+            "devprocess devprocess"
             ;
-    grid-template-rows: 1fr 2fr 2fr;
-    height: 90vh;
-    width: auto; 
-    padding: 0 1.9rem;
+    grid-template-rows: 0.7fr 3fr 4fr 4fr;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 10vh;
+    background-color: rgba(0, 0, 0, 0.822);
 }
 
 .skills-header{
     grid-area: skillheader;
-    background-color: wheat;
+    justify-self: start;
 }
 
 .skill {
     grid-area: skill;
-    background-color: violet;
+    display: grid;
+    justify-content: center;
+}
+
+.sheader {
+    font-family: 'Itim', cursive;
+    font-size: 2.2rem;
+    margin-inline-start: 2rem;
+    margin-top: 1rem;
+    color: #08fdd8;
+}
+
+.skillheader {
+    font-family: 'Itim', cursive;
+    font-size: 2.2rem;
+    margin-inline-start: 2rem;
+    margin-top: 1rem;
+    color: #08fdd8;
+}
+
+.skicontent {
+    font-family: 'Titillium Web', sans-serif;
+    margin-inline-start: 2rem;
+    font-size: 1.1rem;
+    line-height: 23px;
+    color: whitesmoke;
+    grid-column: span/2;
 }
 
 .languages {
     grid-area: language;
-    background-color: thistle;
-}
-
-.devprocess-container {
     display: grid;
     grid-template-areas: 
-            "devprocessheader devprocessheader"
-            "process process"
-            "process process"
-            ;
-    grid-template-rows: 1fr 2fr 2fr;
-    height: 90vh;
-    width: auto; 
-    padding: 0 1.9rem;
+                "langaugeheader languageheader"
+                "langicon1 langicon2 "
+                "langicon3 langicon4" 
+                "langicon5 langicon6" 
+                "langicon7 langicon8" ;
+    grid-template-columns: 1fr 1fr;
 }
 
-.devprocess-header {
-    grid-area: devprocessheader;
-    background-color:yellowgreen;
+.languageheader {
+    font-family: 'Itim', cursive;
+    font-size: 2.2rem;
+    margin-inline-start: 0.5rem;
+    margin-top: 1rem;
+    color: #08fdd8;
 }
 
-.process {
-    grid-area: process;
-    background-color: teal;
+#langicon1 {
+    grid-area: langicon1;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(0, 195, 255);
 }
+
+.langname {
+    font-family: 'Itim', cursive;
+}
+
+#langicon2 {
+    grid-area: langicon2;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: orange;
+}
+#langicon3 {
+    grid-area: langicon3;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: blue;
+}
+#langicon4 {
+    grid-area: langicon4;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: yellow;
+}
+#langicon5 {
+    grid-area: langicon5;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: darkgreen;
+}
+#langicon6 {
+    grid-area: langicon6;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: red;
+}
+#langicon7 {
+    grid-area: langicon7;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Itim', cursive;
+    color: darkslategray;
+}
+
+#langicon8 {
+    grid-area: langicon8;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Itim', cursive;
+    color: whitesmoke;
+}
+
+.experience-container {
+    grid-area: devprocess;
+    margin-top: 5rem;
+}
+
+
+
+.expheader {
+    font-family: 'Itim', cursive;
+    font-size: 2.2rem;
+    margin-inline-start: 0.5rem;
+    margin-top: 2rem;
+    color: #08fdd8;
+}
+
+.experience1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2rem;
+    margin-inline-start: 2rem;
+    margin-top: 2rem;
+    color: whitesmoke;
+    display: grid;
+    width: 10rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: linear-gradient(145deg, #9e9e9e, #bcbcbc);
+    box-shadow:  5px 5px 100px #272727,
+             -1px -1px 1px #b2b2b2;
+}
+
+
 
 @media only screen and (min-width: 1100px) {
     .skills-container {
@@ -55,10 +189,11 @@
         grid-template-areas: 
                 "skillheader skillheader"
                 "skill language"
-                "skill language";
-        grid-template-rows: 0.6fr 1.2fr 1.2fr;
+                "skill language"
+                "devprocess devprocess";
+        grid-template-rows: 0.6fr 1.6fr 1.6fr;
         grid-template-columns: 1fr 1fr;
-        height: 80vh;
+        height: 150vh;
         width: 86%;
         padding: unset;
         position: absolute;
@@ -68,17 +203,23 @@
 
     .skills-header{
         grid-area: skillheader;
-        background-color: wheat;
+    }
+
+    .skicontent {
+        font-family: 'Titillium Web', sans-serif;
+        margin-inline-start: 2rem;
+        font-size: 1.2rem;
+        line-height: 23px;
+        color: whitesmoke;
+        margin-top: 1rem;
     }
     
     .skill {
         grid-area: skill;
-        background-color: violet;
     }
     
     .languages {
         grid-area: language;
-        background-color: thistle;
     }   
     
     .devprocess-container {
@@ -94,17 +235,31 @@
         width: 86%;
         padding: unset;
         position: absolute;
-        top: 80vh;
+        top: 100vh;
         left: 14%;
     }
 
     .devprocess-header {
         grid-area: devprocessheader;
-        background-color:yellowgreen;
     }
     
     .process {
         grid-area: process;
-        background-color: teal;
+    }
+
+    .devheader {
+        font-family: 'Itim', cursive;
+        font-size: 2.2rem;
+        margin-inline-start: 2rem;
+        margin-top: 2rem;
+        color: #08fdd8;
+    }
+
+    .processname {
+        font-family: 'Titillium Web', sans-serif;
+        margin-inline-start: 2rem;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        color: whitesmoke;
     }
 }

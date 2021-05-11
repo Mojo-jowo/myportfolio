@@ -1,39 +1,210 @@
 .navbar-container {
-    background-color: aquamarine;
+    background-color: rgb(0, 0, 0);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100vw;
+    width: 100%;
     height: 10vh;
+    position: fixed;
+    z-index: 1;
+    opacity: 1;
+    background: linear-gradient(145deg, #0e0e0e, #050404);
+    box-shadow:  5px 5px 10px #464646,
+             5px 5px 10px #000000;
 }
 
-.nav-menu {
-    background-color: aquamarine ;
+.menu-icon {
     display: grid;
-    position: absolute;
-    top: 10vh;
-    width: 100vw;
-    justify-content: center;
+    grid-template-areas:
+    "navbarname navbaricon" ;
+    width: 90vw;
+}
+
+.mebar {
     display: none;
 }
 
+.navbar-logo{
+    grid-area: navbarname;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
+
+
+
+.menubar {
+    grid-area: navbaricon;
+    justify-self: end;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-menu {
+    display: grid;
+    position: absolute;
+    top: 10vh;
+    height: 70vh;
+    width: 100%;
+    justify-content: center;
+    left: -110vw;
+    transition: all 1s ease;
+
+}
+
+.nav-menu.active {
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    opacity: 0.8;
+    transition: all 1s ease;
+    z-index: 1;
+    background-color: black;
+
+}
+
+.socials {
+    display: grid;
+    position: absolute;
+    top: 70vh;
+    width: 100%;
+    justify-content: center;
+    left: -110vw;
+    transition: all 1s ease;
+
+}
+
+.socials.active {
+    background-color: black;
+    top: 60vh;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    opacity: 0.8;
+    transition: all 1s ease;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.nav-links {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+
+}
+
+.nav-items {
+    align-self: center;
+}
+
+.social-item {
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+
+}
+
+.reachout {
+    text-decoration: underline;
+}
+
+.selected1 {
+    border-radius: 20px;
+    border: 1px solid #08fdd8;
+    padding: 0.5rem 4rem;
+    transition: all 0.5s ease-in-out;
+}
+.selected2 {
+    border-radius: 20px;
+    padding: 0.5rem 4rem;
+    transition: all 0.5s ease-in-out;
+    border: 1px solid #08fdd8;
+}
+.selected3 {
+    border: 1px solid #08fdd8;
+    border-radius: 20px;
+    padding: 0.5rem 4rem;
+    transition: all 0.5s ease-in-out;
+}
+.selected4 {
+    border: 1px solid #08fdd8;
+    border-radius: 20px;
+    padding: 0.5rem 4rem;
+    transition: all 0.5s ease-in-out;
+}
 
 /* Laptop design */
 
 @media only screen and (min-width: 1100px) {
     .navbar-container {
         display: grid;
-        grid-template-rows: 1fr 2fr 1fr;
+        grid-template-rows: 1.2fr 1.8fr 1fr;
         grid-template-columns: unset;
         height: 100vh;
         width: 14%;
         position: fixed;
     }
 
+    .mebar {
+        display: initial;
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50px;
+    }
+
     .nav-menu {
-        background-color: aquamarine ;
         display: initial;
         position: unset;
         align-self: center;
         width: unset;
+        justify-self: center;
+        height: unset;
+    }
+
+    .menu-icon {
+        display: unset;
+        width: unset;
+        justify-self: center;
+        display: grid;
+        align-content: center;
+    }
+
+    .navbar-logo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .nav-items {
+        padding: 0.5rem 1rem;
+    }
+
+    .nav-links {
+        padding: 0.5rem 2.5rem;
+    }
+
+    .name {
+        font-family: 'Quicksand', sans-serif;
+        margin-top: 1rem;
+    }
+
+    .socials {
+        display: initial;
+        position: unset;
+        width: unset;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        
+    }
+
+    .social-item {
+        margin: 1rem;
     }
 }

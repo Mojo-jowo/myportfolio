@@ -7,22 +7,23 @@ import basketball from '../images/basketball.svg';
 import swimming from '../images/swimming.svg';
 import story from '../images/story.svg';
 import netlify from '../images/netlify.png';
+import me from '../images/me.jpg';
 
 function About() {
     return (
         <>
         <div className="aboutme">
             <section className="profile-pic">
-
+                <img src={me} alt="Me" className="me" />
             </section>
 
             <section className="profile-statement">
                 <h1 className="statement-header">About me</h1>
                 <p className="statement-content">
-                    Hi I am Andrew Lewis Ojowo. I am a web designer and developer currently venturing in freelance projects. I live in Kenya, beautiful country with a whole lot of issues just like any other home. Creativity and logic are my fuel and like wood to fire they make me burn so bright with life and enthusiasm and thus why I find programming a rush. The enfusion problem solving and design, in code and in my life is a skill I am proud to possess. My developing process is iterative and you can find it  
-                    <Link to="/skills" className="devpro">
-                        right here
-                    </Link>, I approach each task as a learning experience and as an opportunity to fail for that is how progress is achieved. Besides programming I enjoy life in many different ways, I am a sports guy, a big HEAt fan of the NBA, support the Manchester City in the English premier league and a die hard of Kogalo Fc (Gormahia) in my home country. I love to engage in talks of all kinds and would consider myself a storyteller. Culture defines who we area and where we are going and I am eternally grateful for I know who I am and where I come from and would love for everyone to embrace themselves and their homes.
+                    <span className="intro">Hi I am Andrew Lewis Ojowo.</span> <br /> <span className="codename">Codename: Mojo-jowo.</span> <br className="br"/>
+                    <article className="br">
+                     I am a web designer and developer currently venturing in freelance projects. I live in Kenya, beautiful country with a whole lot of issues just like any other home. Creativity and logic are my fuel and like wood to fire they make me burn so bright with life and enthusiasm and thus why I find programming a rush. The enfusion problem solving and design, in code and in my life is a skill I am proud to possess. My developing process is iterative, I approach each task as a learning experience and as an opportunity to fail for that is how progress is achieved. Besides programming I enjoy life in many different ways, I am a sports guy, a big <span className="heat">HEAT</span> fan of the NBA, support the <span className="mancity">Manchester City</span>  in the English premier league and a die hard of Kogalo Fc <span className="gor">(Gormahia)</span> in my home country. I love to engage in talks of all kinds and would consider myself a storyteller. Culture defines who we area and where we are going and I am eternally grateful for I know who I am and where I come from and would love for everyone to embrace themselves and their homes.
+                    </article>
 
                 </p>
 
