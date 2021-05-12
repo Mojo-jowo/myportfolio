@@ -12,6 +12,14 @@ function Navbar() {
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
+    // const Mailto = ({ email, subject = '', body = '', children }) => {
+    //     let params = subject || body ? '?' : '';
+    //     if (subject) params += `subject=${encodeURIComponent(subject)}`;
+    //     if (body) params += `${subject ? '&' : ''}body=${encodeURIComponent(body)}`;
+      
+    //     return <a href={`mailto:${email}${params}`} rel="noreferrer" target="_blank">{children} </a>;
+    //   };
+
     return (
         <>
         <nav className="navbar-container">
@@ -52,9 +60,9 @@ function Navbar() {
                 <NavLink to="" className="social-item">
                     <i class="fab fa-twitter"></i>
                 </NavLink>
-                <NavLink to="" className="social-item">
+                {/* <Mailto email="ojowoandrew@gmail.com" subject="" body=""  className="social-item">
                     <i class="fas fa-envelope"></i>
-                </NavLink>
+                </Mailto> */}
                 <NavLink to="" className="social-item">
                     <p className="reachout">Reach out!</p>
                 </NavLink>

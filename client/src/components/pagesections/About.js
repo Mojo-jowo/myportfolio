@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom';
 
 import './About.css';
 
-import basketball from '../images/basketball.svg';
-import swimming from '../images/swimming.svg';
-import story from '../images/story.svg';
 import netlify from '../images/netlify.png';
 import me from '../images/me.jpg';
 
@@ -20,7 +17,12 @@ function About() {
             <section className="profile-statement">
                 <h1 className="statement-header">About me</h1>
                 <p className="statement-content">
-                    <span className="intro">Hi I am Andrew Lewis Ojowo.</span> <br /> <span className="codename">Codename: Mojo-jowo.</span> <br className="br"/>
+                    <span className="intro"> Hi,
+                    <br />
+                    I'm <i className="red">A</i>ndrew.
+                    <br />
+                    Web developer
+                    </span> <br /> <span className="codename">Codename: Mojo-jowo.</span> <br className="br"/>
                     <article className="br">
                      I am a web designer and developer currently venturing in freelance projects. I live in Kenya, beautiful country with a whole lot of issues just like any other home. Creativity and logic are my fuel and like wood to fire they make me burn so bright with life and enthusiasm and thus why I find programming a rush. The enfusion problem solving and design, in code and in my life is a skill I am proud to possess. My developing process is iterative, I approach each task as a learning experience and as an opportunity to fail for that is how progress is achieved. Besides programming I enjoy life in many different ways, I am a sports guy, a big <span className="heat">HEAT</span> fan of the NBA, support the <span className="mancity">Manchester City</span>  in the English premier league and a die hard of Kogalo Fc <span className="gor">(Gormahia)</span> in my home country. I love to engage in talks of all kinds and would consider myself a storyteller. Culture defines who we area and where we are going and I am eternally grateful for I know who I am and where I come from and would love for everyone to embrace themselves and their homes.
                     </article>
@@ -29,25 +31,36 @@ function About() {
 
             </section>
 
-            <section className="activities">
-                <h1 className="activities-header">Activities I enjoy:</h1>
-                <figure className="activity1">
-                    <img src={ basketball } alt="basketball" className="activityicon" />
-                    <figcaption className="activityname">Basketball</figcaption>
-                </figure>
-                <figure className="activity2">
-                    <img src={ swimming } alt="swimming" className="activityicon" />
-                    <figcaption className="activityname">Swimming</figcaption>
-                </figure>
-                <figure className="activity3">
-                    <img src= { story } alt="Storytelling" className="activityicon" />
-                    <figcaption className="activityname">Storytelling</figcaption>
-                </figure>
+            <section className="into">
+                <h1 className="into-header">What I'm into ?</h1>
+                <p className="intostatement">
+                    Primary area of development is undoubtedly frontend, working with different libraries to create different UI designs each 
+                    with different capabilities has been a thrill. Although api technologies and microservices has been a luring subject
+                    and soon I see myself diving into backend development with an aim to be a proper full stack developer.
+
+                    <br />
+                    <br />
+
+                    I began my journey in code development with CSS and Html and diving into different technologies such as Javascript,
+                    React, Node.js, Express has let me gather a significant amount of experience in both frontend and backend development.
+                    Each plays a different role and both are great to work with.
+
+                    <br />
+                    <br />
+
+                    I currently work on freelance projects and are opened for new opportunities.
+
+                    <br />
+                    <br />
+
+                    You can find out more on <Link to="/skills" className="sklink">skills</Link>. 
+                </p>
 
             </section>
 
-            <section className="tool-container">
+            <section className="tool">
                 <h1 className="toheader">Tools:</h1>
+                <section className="tool-container">
                 <figure className="tool1">
                     <img src="https://img.icons8.com/fluent/48/000000/visual-studio-code-2019.png" alt="Visual studio code" className="toolicon" />
                     <ficaption className="toolname">
@@ -96,6 +109,7 @@ function About() {
                         Codepen
                     </ficaption>
                 </figure>
+                </section>
             </section>
 
         </div>            
