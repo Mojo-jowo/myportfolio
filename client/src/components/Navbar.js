@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import './Navbar.css';
 import me from './images/me.jpg';
@@ -57,14 +57,12 @@ function Navbar() {
             </ul>
 
             <div className={click ? "socials active" : "socials"}>
-                <NavLink to="" className="social-item">
+                <a href="https://twitter.com/mojo_jowoo" target="_blank" rel="noreferrer" className="social-item" onClick={closeMobileMenu}>
                     <i class="fab fa-twitter"></i>
-                </NavLink>
-                {/* <Mailto email="ojowoandrew@gmail.com" subject="" body=""  className="social-item">
-                    <i class="fas fa-envelope"></i>
-                </Mailto> */}
-                <NavLink to="" className="social-item">
-                    <p className="reachout">Reach out!</p>
+                </a>
+                
+                <NavLink to="/contacts" className="social-item">
+                    <p className="reachout" onClick={closeMobileMenu}>Reach out! </p>
                 </NavLink>
             </div>
 

@@ -32,6 +32,7 @@
 .intro {
     margin-inline-start: 1.2rem;
     font-size: 4rem;
+    
 }
 
 .profile-statement {
@@ -64,9 +65,14 @@
 }
 
 .red {
-    color: #fd2508;
     font-size: 5rem;
     font-family: 'Monoton', cursive;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
+    text-shadow: 
+                          8px 8px #ff1f8f,
+                          20px 20px #000000;
 }
 
 .into-header {
@@ -74,7 +80,25 @@
     font-family: 'Itim', cursive;
     font-size: 2.2rem;
     color: #08fdd8;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 15rem;
+
 }
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
 
 .sklink{
     text-decoration: none;
